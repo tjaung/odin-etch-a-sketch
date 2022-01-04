@@ -9,18 +9,19 @@ body {
 }
 
 header {
-    height: 10vh;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    height: 11vh;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 .title {
   text-align: center;
+  font-size: 5em;
 }
 
 .toolbar{
-    background: lightgrey;
+    background: grey;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
     border: 1px solid #000000;
 
 }
@@ -31,18 +32,54 @@ header {
     justify-content: center;
     align-items: center;
     grid-gap: 10px;
+    margin-bottom: 2%;
 
-    size: 10px;
+}
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+[type=radio]:checked + img {
+  outline: 5px solid blue;
+}
+
+
+input {
+    max-height: 30%;
+    max-width: 30%;
+}
+
+
+
 .tools img {
-    min-height: 20px;
-    min-width: 20px;
-    max-height: 20px;
-    max-width: 20px;
+    min-height: 20%;
+    min-width: 20%;
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.tools #grid {
+    background: 
 }
 .tools button {
     cursor: pointer;
+}
+#color-chooser {
+    display: none;
+    flex-flow: row wrap;
+    margin-left: 10%;
+    position: absolute;
+}
+#color-chooser img {
+    max-height: 20px;
+    max-width: 20px;
 }
 
 .canvas-container {
@@ -72,20 +109,36 @@ header {
 
 .slider{
     opacity: 0.75;
-    width: 65vw;
-    height: 5vh;
+    width: 100vw;
+    height: 8vh;
     background: grey;
     outline: none;
     -webkit-transition: .1s;
     transition: opacity .1s;
+    cursor: pointer;
 }
 
 .slider:hover {
     opacity: 1;
 }
 
+#dimChange {
+    width: 10%;
+    height: 25%;
+    font-size: 2em;
+}
+
 footer {
     height: 5vh;
     text-align: center;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 380px) {
+
+   h2 { 
+      font-size: 10em; 
+   }
+
 }
 

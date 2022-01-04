@@ -20,13 +20,87 @@
     </header>
     <body>
         <section class='toolbar'>
+                        <div id='color-chooser'>
+                <label>
+                  <input type='radio' id='red' value='red' name='paint-choose' checked>
+                  <img src='images/red.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='red-orange' value='orangered' name='paint-choose'>
+                  <img src='images/redorange.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='orange' value='orange' name='paint-choose'>
+                  <img src='images/orange.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='yellow-orange' value='sandybrown' name='paint-choose'>
+                  <img src='images/yelloworange.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='yellow' value='yellow' name='paint-choose'>
+                  <img src='images/yellow.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='yellow-green' value='greenyellow' name='paint-choose'>
+                  <img src='images/yellowgreen.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='green' value='green' name='paint-choose'>
+                  <img src='images/gree.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='blue-green' value='lightseagreen' name='paint-choose'>
+                  <img src='images/bluegreen.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='blue' value='blue' name='paint-choose'>
+                  <img src='images/blue.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='blue-violet' value='blueviolet' name='paint-choose'>
+                  <img src='images/blueviolet.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='violet' value='violet' name='paint-choose'>
+                  <img src='images/violet.jpg'>
+                <label>
+                <label>
+                  <input type='radio' id='red-violet' value='mediumvioletred' name='paint-choose'>
+                  <img src='images/redviolet.jpg'>
+                <label>
+            </div>
             <ul class='tools'>
-                <li><button type='radio' id='black-white'><img src='images/black.jpg'></button></li>
-                <li><button type='radio' id='color-choose'><img src='images/color.jpg'></button></li>
-                <li><button type='radio' id='color'><img src='images/rainbow.jpg'></button></li>
-                <li><button type='radio' id='eraser'><img src='images/eraser.jpg'></button></li>
-                <li><button id='grid-toggle'><img src='images/grid.jpg'></button></li>
-                <li><button id='clear'><img src='images/clear.jpg'></button></li>
+                <li>
+                  <label>
+                    <input type='radio' id='black-white' value='pencil' name='draw-tool' checked>
+                    <img src='images/black.jpg'>
+                  <label>
+                </li>
+                <li>
+                  <label>
+                    <input type='radio' id='color-choose' value='paint' name='draw-tool'>
+                    <img src='images/color.jpg'>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type='radio' id='color' value='random' name='draw-tool'>
+                    <img src='images/rainbow.jpg'>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type='radio' id='eraser' value='eraser' name='draw-tool'>
+                    <img src='images/eraser.jpg'>
+                  </label>
+                </li>
+                <li>
+                  <input id='grid-toggle' type="image" src='images/grid.jpg' />
+                </li>
+                <li>
+                  <input id='clear' type="image" src='images/clear.jpg' />
+                </li>
             </ul>
         </section>
 
@@ -37,9 +111,9 @@
 
         <section id='slider-container'>
             <input type="range" min="1" max="100" value="16" class="slider" id='slider'>
-            <p id='dimensions'></p>
+            <input type='number' min='1' max='100' id='dimChange'><p id='dimensions'></p>
         </section>
-        
+ 
     </body>
     <footer>
         <p>Odin Project</p>
