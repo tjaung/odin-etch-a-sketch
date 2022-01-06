@@ -1,3 +1,10 @@
+html {
+background-color: #fae1e1;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+font-family: sans-serif;
+}
+
 body {
     display: flex;
     flex-flow: column;
@@ -8,15 +15,15 @@ body {
     width: 99.9vw;
 }
 
-header {
-    height: 11vh;
-    padding-top: 10px;
-    padding-bottom: 20px;
+h2 {
+    height: 10vh; 
 }
 .title {
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
+  padding-bottom: 2%;
 }
+
 
 .toolbar{
     background: grey;
@@ -125,20 +132,43 @@ input {
 #dimChange {
     width: 10%;
     height: 25%;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 footer {
     height: 5vh;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
 }
 
-@media only screen and (max-width: 380px) {
-
-   h2 { 
-      font-size: 10em; 
+@media screen and (min-width:961px)  { 
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    h2 {
+        height: 3vh;
+    }
+   .toolbar {
+       margin-top: 3%;
+       width: 40vw;
+       height: 5vh;
    }
-
+   .toolbar img{
+       max-height: 50%;
+       max-width: 50%;
+   }
+   .canvas-container {
+       width: 40vw;
+       height: 40vh;
+   }
+   
+   .slider {
+       width: 80vw;
+   }
+   
+   #dimChange {
+     font-size: 1.2em;
+   }
+   
+   footer {
+       font-size: 1em;
+   }
 }
-
