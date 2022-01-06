@@ -152,8 +152,8 @@ footer {
        height: 5vh;
    }
    .toolbar img{
-       max-height: 50%;
-       max-width: 50%;
+       max-height: 25%;
+       max-width: 25%;
    }
    .canvas-container {
        width: 40vw;
